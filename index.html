@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デジタルデトックス＆リラックス空間 ランキング</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌿 デジタルデトックス スポット＆体験</h1>
+        <p>スマホやPCから離れて、心と身体を包み込むリラックス空間へ</p>
+    </header>
+
+    <div class="container">
+        <!-- 絞り込みフィルター -->
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterCategory('all', event)">すべて</button>
+            <button class="filter-btn" onclick="filterCategory('nature', event)">自然・森林公園</button>
+            <button class="filter-btn" onclick="filterCategory('cafe', event)">デトックスカフェ</button>
+            <button class="filter-btn" onclick="filterCategory('program', event)">ヨガ・専門家ケア</button>
+        </div>
+
+        <!-- ランキングリスト -->
+        <div id="ranking-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
