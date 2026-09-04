@@ -65,6 +65,7 @@ header p {
 
 /* ランキングカード */
 .ranking-card {
+    animation: fadeInup 0.4s ease both;
     background: white;
     border-radius: 16px;
     overflow: hidden;
@@ -76,6 +77,10 @@ header p {
     flex-direction: column;
 }
 
+@keyframes fadeInup {
+    from {opacity: 0; transform: translateY(15px);}
+    to {opacity:1; transform: translate(0);}
+}
 @media (min-width: 600px) {
     .ranking-card {
         flex-direction: row;
@@ -149,7 +154,10 @@ header p {
     color: #666;
     margin-bottom: 15px;
 }
-
+.filter-btn:focus-visible, .like-btn:focus-visible {
+    outline: 3px solid #2e7d32;
+    outline-offset: 2px;
+}
 /* いいねボタン */
 .card-footer {
     display: flex;
